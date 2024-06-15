@@ -12,36 +12,38 @@
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body class="font-lato">
-  <header>
+  <header class="border-b-2 fixed w-f">
     <div class="flex items-center justify-between px-10 py-7">
         <div class="flex items-center gap-2">
             <img src="images/cognito-logo.svg" alt="Cognito Logo" class="w-10"/>
-            <h1 class="text-[#234652] text-2xl font-extrabold">Cognito Forms</h1>
+            <h1 class="text-[#234652] text-3xl font-black">Cognito Forms</h1>
         </div>
     
         <!-- nav bar -->
         <nav class="flex  items-center justify-center gap-10">
-            <ul class="text-lg font-light text-[#09a098] flex items-center gap-10">
-                <li class="relative hover:border-b-2 hover:border-[#09a098]"><a href="">
+            <ul class="text-base font-light text-[#09a098] flex items-center gap-10">
+                <li class="pb-3 hover:border-b-2 hover:border-[#09a098]"><a href="">
                     Products 
-                    <span><ion-icon name="chevron-down-outline" class="text-sm absolute top-3"></ion-icon></span>
-                </a></li>
-                <li class="hover:border-b-2 hover:border-[#09a098]"><a href="">
+                    <img src="images/dropdown.svg" alt="dropdown" class="-mt-5 pl-20"/>
+                    </a>
+                </li>
+                <li class="pb-3 hover:border-b-2 hover:border-[#09a098]"><a href="">
                     Templates
                 </a></li>
-                <li><a href="" class="hover:border-b-2 hover:border-[#09a098]">
+                <li class="pb-3 hover:border-b-2 hover:border-[#09a098]"><a href="" class="">
                     Pricing 
                 </a></li>
-                <li class="relative hover:border-b-2 hover:border-[#09a098]"><a href="">
+                <li class="pb-3 hover:border-b-2 hover:border-[#09a098]"><a href="">
                     Resources
-                    <span><ion-icon name="chevron-down-outline" class="text-sm absolute top-3"></ion-icon></span>
-                </a></li>
+                    <img src="images/dropdown.svg" alt="dropdown" class="-mt-5 pl-20"/>
+                    </a>
+                </li>
                 
             </ul>
     
             <div class="space-x-5">
                 <span><ion-icon name="search-outline" class="text-base"></ion-icon></span>
-                <button class="px-5 py-2 border border-[#09a098] font-light text-xl  text-[#09a098]">Log In</button>
+                <a href="log.html" class="px-5 py-2 border border-[#09a098] font-light text-xl  text-[#09a098]">Log In</a>
                 <button class="bg-[#09a098] px-5 py-2 font-bold text-xl  text-white">Sign Up</button>
             </div>
         </nav>
@@ -62,7 +64,7 @@
             <img src="images/tee-square.svg" alt="Tee Square" class="w-20"/>
             <div>
                 <h3 class="bg-clip-text text-transparent bg-gradient-to-t from-[#0b726d] to-[#5ff7ef] text-2xl font-black">Build</h3>
-                <p class="text-lg text-[#163836] max-w-52">
+                <p class="text-base text-[#163836] max-w-52">
                     effortless online forms as unique as your process.
                 </p>
             </div>
@@ -72,7 +74,7 @@
             <img src="images/box.svg" alt="Tee Square" class="w-20"/>
             <div>
                 <h3 class="bg-clip-text text-transparent bg-gradient-to-t from-[#0b726d] to-[#5ff7ef] text-2xl font-black">Collection</h3>
-                <p class="text-lg text-[#163836] max-w-52">
+                <p class="text-base text-[#163836] max-w-52">
                     consistent data from your customers and employees.
                 </p>
             </div>
@@ -82,7 +84,7 @@
             <img src="images/multiply.svg" alt="Tee Square" class="w-20"/>
             <div>
                 <h3 class="bg-clip-text text-transparent bg-gradient-to-t from-[#0b726d] to-[#5ff7ef] text-2xl font-black">Take Action</h3>
-                <p class="text-lg text-[#163836] max-w-56">
+                <p class="text-base text-[#163836] max-w-56">
                     at the right time with simple automatic notifications.
                 </p>
             </div>
@@ -145,5 +147,14 @@
         </h3>
     </div>
   </section>
+
+
+
+  <script>
+    const hid = () => {
+        const not = document.querySelector('btn')
+        not.hidden = false;
+    }
+  </script>
 </body>
 </html>
