@@ -1891,6 +1891,10 @@ video {
     text-align: start;
   }
 
+  .lg\:font-lato {
+    font-family: Lato, sans-serif;
+  }
+
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
