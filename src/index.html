@@ -1,288 +1,813 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
-    <title>Cognito forms | free no code</title>
+    <link rel="icon" href="/images/cog-logo.png">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./input.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title>Cognito | No Code</title>
 </head>
-<body class="font-lato">
-  <header class="lg:border-b-2 fixed top-0 w-full bg-white opacity-80 z-50">
-    <div class="lg:flex items-center justify-between lg:px-10 lg:py-7">
-        <div class="lg:flex items-center lg:gap-2">
-            <img src="images/cognito-logo.svg" alt="Cognito Logo" class="w-10"/>
-            <h1 class="text-[#234652] text-3xl font-black">Cognito Forms</h1>
-        </div>
-    
-        <!-- nav bar -->
-        <nav class="lg:flex  items-center justify-center lg:gap-10">
-            <ul class="text-base font-light text-[#09a098] lg:flex items-center lg:gap-10">
-                <li class="pb-3 hover:border-b-2 hover:border-[#09a098]"><a href="">
-                    Products 
-                    <img src="images/dropdown.svg" alt="dropdown" class="lg:-mt-4 lg:pl-16"/>
-                    </a>
-                </li>
-                <li class="pb-3 hover:border-b-2 hover:border-[#09a098]"><a href="">
-                    Templates
-                </a></li>
-                <li class="pb-3 hover:border-b-2 hover:border-[#09a098]"><a href="" class="">
-                    Pricing 
-                </a></li>
-                <li class="pb-3 hover:border-b-2 hover:border-[#09a098]"><a href="">
-                    Resources
-                    <img src="images/dropdown.svg" alt="dropdown" class="lg:-mt-4 lg:pl-20"/>
-                    </a>
-                </li>
-                
-            </ul>
-    
-            <div class="space-x-5">
-                <span><ion-icon name="search-outline" class="text-base"></ion-icon></span>
-                <a href="log.html" class="lg:px-4 lg:py-2 border border-[#09a098] font-light lg:text-lg  text-[#1e2928]
-                hover:bg-[#def3f2]">Log In</a>
-                <button class="bg-[#09a098] lg:px-4 lg:py-2 font-bold lg:text-lg  text-white hover:scale-95 hover:transition-all 
-                hover:duration-500">Sign Up</button>
+<body class="text-teal-950">
+
+    <header class="bg-white fixed w-full opacity-80 z-50">
+        <nav class="hidden lg:flex lg:items-center lg:justify-between lg:px-10 lg:py-5">
+            <div class="">
+                <img src="/images/logo.svg" alt="" class="w-48">
+            </div>
+
+            <div class="flex items-center gap-10">
+                <ul class="lg:flex lg:items-center font-gilroy-light gap-6">
+                    <li class="flex items-center gap-1"> 
+                        <a class="hover:text-teal-500 hover:underline hover:underline-offset-8 text-teal-950 font-light text-xl" href="#">
+                            Product</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none" class="w-5 mt-1"><path d="m5.5 2.5 6 6-6 6" stroke="#042F2E" stroke-linecap="round" stroke-linejoin="round" class="i-stroke"></path></svg> 
+                    </li>
+                    <li> 
+                        <a class="hover:text-teal-500 hover:underline hover:underline-offset-8 text-teal-950 font-light text-xl" href="#">Templates</a> 
+                    </li> 
+                    <li class="hover:underline hover:underline-offset-8"> 
+                        <a class="hover:text-teal-500 hover:underline hover:underline-offset-8 text-teal-950 font-light text-xl" href="#">Pricing</a> 
+                    </li> 
+                    <li class="flex items-center gap-1"> 
+                        <a class="hover:text-teal-500 hover:underline hover:underline-offset-8 text-teal-950 font-light text-xl" href="#">Resources</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none" class="w-5 mt-1"><path d="m5.5 2.5 6 6-6 6" stroke="#042F2E" stroke-linecap="round" stroke-linejoin="round" class="i-stroke"></path></svg>  
+                    </li>
+                    <div class="pt-2">
+                        <img src="/images/search.svg" alt="" class="w-6">
+                    </div>
+                </ul> 
+                <div class="flex items-center justify-center gap-5">
+                    <button class="border-[0.5px] border-teal-900 text-base font-gilroy-light py-2 px-4 
+                    hover:bg-teal-50">
+                        Log In
+                    </button>
+                    <button class="bg-teal-600 font-gilroy-bold text-base text-white py-2 px-4
+                    hover:scale-105 hover:transition-all hover:duration-500">
+                        Sign Up
+                    </button>
+                </div>
             </div>
         </nav>
-    </div>
-  </header>
 
-  <section class="lg:mt-28">
-    <div class="">
-        <h1 class="text-[#09a098] lg:text-4xl font-[300] text-center">A powerful no-code platform that automates the steps to</h1>
-        <h1 class="text-[#163836] lg:text-8xl font-black  text-center lg:flex items-center justify-center">
-            Move your work forward
-            <span><img src="images/forward-arrow.svg" alt="forward arrow" ></span>
-        </h1>
-    </div>
+        <!-- mobile -->
+        <nav class="w-full py-5 lg:hidden">
+            <div class="flex justify-between z-50 fixed w-full -mt-6 px-6 py-6 bg-white">
+                <div class="">
+                    <img src="/images/logo.svg" alt="" class="w-48">
+                </div>
+                <div class="flex items-center gap-6">
+                    <ion-icon onclick="onToggleMenu(this)" 
+                        name="menu" class="text-3xl cursor-pointer text-black"> 
+                    </ion-icon> 
+                </div>  
+            </div> 
+            <div class="nav-links duration-500 fixed h-full left-0 top-[-100%]  w-full mt-5 bg-white
+             z-20 lg:flex lg:items-center"> 
+                <div class="flex items-center justify-between bg-teal-100 text-teal-700 text-sm px-6 py-4 mt-2">Search
+                    <img src="/images/search.svg" alt="" class="w-6">
+                </div> 
+                <ul class="flex flex-col font-gilroy-light gap-8 pt-8 px-12 mb-48">
+                    <li class="flex items-center gap-1"> 
+                        <a class="hover:text-teal-500 hover:underline hover:underline-offset-8 text-teal-950 font-light text-2xl" href="#">Product</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none" class="w-5 mt-1"><path d="m5.5 2.5 6 6-6 6" stroke="#042F2E" stroke-linecap="round" stroke-linejoin="round" class="i-stroke"></path></svg> 
+                    </li>
+                    <li> 
+                        <a class="hover:text-teal-500 hover:underline hover:underline-offset-8 text-teal-950 font-light text-2xl" href="#">Templates</a> 
+                    </li> 
+                    <li class="hover:underline hover:underline-offset-8"> 
+                        <a class="hover:text-teal-500 hover:underline hover:underline-offset-8 text-teal-950 font-light text-2xl" href="#">Pricing</a> 
+                    </li> 
+                    <li class="flex items-center gap-1"> 
+                        <a class="hover:text-teal-500 hover:underline hover:underline-offset-8 text-teal-950 font-light text-2xl" href="#">Resources</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none" class="w-5 mt-1"><path d="m5.5 2.5 6 6-6 6" stroke="#042F2E" stroke-linecap="round" stroke-linejoin="round" class="i-stroke"></path></svg>  
+                    </li>
+                </ul> 
+                <div class="flex text-center justify-center gap-6">
+                    <button class="border-[0.5px] border-teal-900 text-xl font-gilroy-light py-3 px-12">
+                        Log In
+                    </button>
+                    <button class="bg-teal-600 font-gilroy-bold text-xl text-white py-3 px-12">
+                        Sign Up
+                    </button>
+                </div>
+            </div> 
+        </nav> 
+    </header>   
 
-    <div class="lg:flex items-center justify-center lg:gap-10 py-10">
-        <div class="lg:flex ">
-            <img src="images/tee-square.svg" alt="Tee Square" class="w-20"/>
+    <section class="pt-16 pb-6 md:pt-24 lg:pt-36">
+        <p class="text-xl sm:text-4xl lg:text-5xl text-center text-teal-600 font-gilroy-regular mb-3">
+            A powerful no-code platform that automates the steps to
+        </p>
+        <div class="flex items-center justify-center space-x-1">
+            <p class="text-5xl md:text-7xl lg:text-8xl leading-10 text-teal-950 text-center font-gilroy-bold">Move your work forward</p>
+            <div class="">
+                <img src="/images/arrow.svg" alt="" class="w-8 lg:w-16">
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="grid font-lato">
+        <div class="flex flex-col sm:flex-row items-center justify-center font-lato">
+            <div class="flex sm:flex-col md:flex-row sm:gap-1 gap-3 mb-2 mx-8">
+                <img src="/images/tee-square.svg" alt="" class="w-12">
+                <div class="mt-6">
+                    <p class="text-xl text-teal-600 font-extrabold">Build</p>
+                    <p class="text-lg  lg:max-w-52">effortless online forms as unique as your process.</p>
+                </div>
+            </div>
+            <div class="flex sm:flex-col md:flex-row sm:gap-1 gap-3 mb-2 mx-8">
+                <img src="/images/box.svg" alt="" class="w-12">
+                <div class="mt-6">
+                    <p class="text-xl text-teal-600 font-extrabold">Collect</p>
+                    <p class="text-lg lg:max-w-72">consistent data from your customers and employees</p>
+                </div>
+            </div>
+            <div class="flex sm:flex-col md:flex-row sm:gap-1 gap-3 mb-2 mx-8">
+                <img src="/images/multiply.svg" alt="" class="w-12">
+                <div class="mt-6">
+                    <p class="text-xl text-teal-600 font-extrabold">Take action</p>
+                    <p class="text-lg lg:max-w-72">at the right time with simple automatic notifications</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid">
+            <button class="bg-orange-700 py-3 px-24 mt-8 mx-auto text-xl font-extrabold text-white
+            hover:scale-95 hover:transition-all hover:duration-500">Get Started</button>
+            <p class="text-center text-xs text-gray-500 py-1">14 days free trial. No credit card required</p>
+        </div>
+    </section>
+
+     
+    <section class="py-24 md:flex md:flex-col">
+        <div class="tabs flex justify-between lg:justify-center lg:gap-24 items-center gap-7 px-5 py-4 overflow-x-auto bg-gradient-to-t from-teal-50 to-teal-0">
+            <button class="flex flex-col items-center hover:text-teal-600 active:text-teal-600 tap-button" onclick="openTab(event, 'Tab1')">
+                <img src="/images/signature-icon.svg" alt="" class="w-14 p-3 mx-auto hover:bg-gray-200 hover:rounded-full active:bg-teal-600 active:text-white">
+                <p class="text-gray-600 text-sm">Signatures</p>
+            </button>
+            <button class="flex flex-col items-center hover:text-teal-600 tap-button" onclick="openTab(event, 'Tab2')">
+                <img src="/images/payment-icon.svg" alt="" class="w-14 p-3 mx-auto hover:bg-gray-200 hover:rounded-full active:bg-teal-600 active:text-white">
+                <p class="text-gray-600 text-sm">Payment</p>
+            </button>
+            <button class="flex flex-col items-center hover:text-teal-600 tap-button" onclick="openTab(event, 'Tab3')">
+                <img src="/images/docs-icon.svg" alt="" class="w-14 p-3 mx-auto hover:bg-gray-200 hover:rounded-full active:bg-teal-600 active:text-white">
+                <p class="text-gray-600 text-sm w-30" >Generated Docs</p>
+            </button>
+            <button class="flex flex-col items-center hover:text-teal-600 tap-button" onclick="openTab(event, 'Tab4')">
+                <img src="/images/workflow-icon.svg" alt="" class="w-14 p-3 mx-auto hover:bg-gray-200 hover:rounded-full active:bg-teal-600 active:text-white">
+                <p class="text-gray-600 text-sm">Workflow</p>
+            </button>
+            <button class="flex flex-col items-center hover:text-teal-600 tap-button" onclick="openTab(event, 'Tab5')">
+                <img src="/images/data-icon.svg" alt="data" class="w-14 p-3 mx-auto hover:bg-gray-200 hover:rounded-full active:bg-teal-600 active:text-white">
+                <p class="text-gray-600 text-sm">Data</p>
+            </button>
+            <button class="flex flex-col items-center hover:text-teal-600 tap-button" onclick="openTab(event, 'Tab6')">
+                <img src="/images/approval-icon.svg" alt="" class="w-14 p-3 mx-auto hover:bg-gray-200 hover:rounded-full active:bg-teal-600 active:text-white">
+                <p class="text-gray-600 text-sm">Approval</p>
+            </button>
+        </div>
+
+        <div class="">
+            <div id="Tab1" class="tab-content active flex items-center justify-center px-5 pb-5 bg-gradient-to-t from-teal-200 to-teal-50">
+                <div class="relative shadow-lg">
+                    <img src="/images/signature-base-mobile.webp" alt="" class="md:w-[60rem] lg:w-[65rem] border">
+                    <img src="/images/signature-phone.webp" alt="" class="absolute w-60 md:w-80 lg:w-[45%] top-12 left-28 lg:left-[57%]
+                    lg:top-1/3">
+                </div>
+            </div>
+            <div id="Tab2" class="tab-content hidden px-5 pb-5 bg-gradient-to-t from-teal-200 to-teal-50">
+                <div class="relative border border-teal-500 shadow-lg">
+                    <img src="/images/payment-base--mobile..webp" alt="" class="w-full h-auto">
+                    <img src="/images/payment-phone.webp" alt="" class="absolute w-60 top-12 left-28">
+                </div>
+            </div>
+            <div id="Tab3" class="tab-content hidden px-5 pb-5 bg-gradient-to-t from-teal-200 to-teal-50">
+                <div class="border border-teal-500 shadow-lg">
+                    <img src="/images/document-paper.webp" alt="" class="w-60 h-auto">
+                </div>
+            </div>
+            <div id="Tab4" class="tab-content hidden px-5 pb-5 bg-gradient-to-t from-teal-200 to-teal-50">
+                <div class="">
+                    <img src="/images/workflow-mobile.webp" alt="" class="w-full h-auto">
+                </div>
+            </div>
+            <div id="Tab5" class="tab-content hidden px-5 pb-5 bg-gradient-to-t from-teal-200 to-teal-50">
+                <div class="relative">
+                    <img src="/images/data-mobile.webp" alt="" class="w-full h-auto">
+                    <img src="/images/data-modal.webp" alt="" class="absolute w-60 top-12 left-28">
+                </div>
+            </div>
+            <div id="Tab6" class="tab-content hidden px-5 pb-5 bg-gradient-to-t from-teal-200 to-teal-50">
+                <div class="relative">
+                    <img src="/images/approval-mobile.webp" alt="" class="w-full h-auto">
+                    <img src="/images/approval.webp" alt="" class="absolute w-60 top-12 left-28">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    
+    <section class="px-6 py-12">
+        <div class="grid">
+            <p class="text-4xl font-gilroy-bold text-teal-950 text-center">Increase productivity</p>
+            <p class="text-2xl lg:text-3xl my-4 font-gilroy-light text-center text-teal-950">Move the work forward at lightning speed and unbelievable accuracy.</p>
+        </div>
+        <div class="py-8 md:flex md:items-center md:justify-center  gap-16 text-teal-950">
+            <div class="lg:flex lg:flex-col lg:items-center gap-3 text-center">
+                <div>
+                    <p class="text-6xl font-gilroy-heavy">90%</p>
+                </div>
+                <p class="font-lato font-bold text-lg lg:max-w-60">90% are able to act quicker on incoming data/forms.</p>
+            </div>
+            <div class="lg:flex lg:flex-col lg:items-center gap-3 text-center">
+                <div>
+                    <p class="text-6xl font-gilroy-heavy">8</p>
+                </div>
+                <p class="font-lato font-bold text-lg">8 hours saved each week.</p>
+            </div>
+            <div class="lg:flex lg:flex-col lg:items-center gap-3 text-center ">
+                <div>
+                    <p class="text-6xl font-gilroy-heavy">80%</p>
+                </div>
+                <p class="font-lato font-bold text-lg lg:max-w-72">80% have more accurate, consistent, and complete data.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-6 py-10">
+        <main class="md:flex md:items-center md:justify-evenly">
             <div>
-                <h3 class="bg-clip-text text-transparent bg-gradient-to-t from-[#0b726d] to-[#5ff7ef] text-2xl font-black">Build</h3>
-                <p class="text-base text-[#163836] lg:max-w-52">
-                    effortless online forms as unique as your process.
+                <p class="text-3xl md:text-4xl lg:text-6xl font-gilroy-bold text-teal-600 py-4">The ultimate tool for every team</p>
+                <p class="text-2xl lg:text-4xl md:max-w-[600px] lg:max-w-[800px] font-gilroy-light text-slate-600">
+                    When off-the-shelf software doesn't suit your needs, customize Cognito Forms to be a perfect fit for your team.        
                 </p>
             </div>
-        </div> 
-
-        <div class="lg:flex ">
-            <img src="images/box.svg" alt="Tee Square" class="w-20"/>
-            <div>
-                <h3 class="bg-clip-text text-transparent bg-gradient-to-t from-[#0b726d] to-[#5ff7ef] text-2xl font-black">Collection</h3>
-                <p class="text-base text-[#163836] max-w-52">
-                    consistent data from your customers and employees.
-                </p>
+            
+            <div class="hidden md:block">
+                <img src="/images/human-resources-team1.webp" alt="Human Resources Team" class="rounded-[50%] md:w-52 lg:w-72
+                border-4 border-slate-500"/>
             </div>
-        </div> 
-
-        <div class="lg:flex ">
-            <img src="images/multiply.svg" alt="Tee Square" class="w-20"/>
-            <div>
-                <h3 class="bg-clip-text text-transparent bg-gradient-to-t from-[#0b726d] to-[#5ff7ef] text-2xl font-black">Take Action</h3>
-                <p class="text-base text-[#163836] max-w-56">
-                    at the right time with simple automatic notifications.
-                </p>
-            </div>
-        </div> 
-    </div>
-
-    <div class=" mx-auto text-center space-y-3">
-        <button class="bg-[#f1653f] lg:px-20 lg:py-4 lg:text-xl text-white font-black hover:scale-95 hover:transition-all
-         hover:duration-700"
-        >Get Started</button>
-        <p class="text-xs font-semibold text-[#356b67]">14-day free trial. No credit card required.</p>
-    </div>
-  </section>
-
-    <section class="bg-gradient-to-t from-[#ace0de] via-[#ddfaf9] to-white lg:pt-32">
-        <main class="flex flex-col items-center justify-center lg:gap-5">
-            <ol class=" lg:flex items-center justify-center lg:gap-36">
-                <!-- signatures -->
-                <li class="flex flex-col items-center">
-                    <div class="bg-[#09a098] inline-block p-2 rounded-[50%] cursor-pointer">
-                        <img src="images/signature.svg" alt="signature"/>
-                    </div>
-                    <p class="text-[#09a098] text-sm font-semibold">Signatures</p>
-                </li>
-    
-                <!-- payment -->
-                <li class="flex flex-col items-center">
-                    <div class="hover:bg-[#cfe9e7] inline-block p-2 rounded-[50%] cursor-pointer">
-                    <img src="images/payment.svg" alt="payment"/>
-                    </div>
-                    <p class="text-[#09a098] text-sm font-semibold">Payment</p> 
-                </li>
-    
-                <!-- docs -->
-                <li class="flex flex-col items-center">
-                    <div class="hover:bg-[#cfe9e7] inline-block p-2 rounded-[50%] cursor-pointer">
-                    <img src="images/docs.svg" alt="docs"/>
-                    </div>
-                    <p class="text-[#09a098] text-sm font-semibold">Generated Docs</p> 
-                </li>
-    
-                <!-- workflow -->
-                <li class="flex flex-col items-center">
-                    <div class="hover:bg-[#cfe9e7] inline-block p-2 rounded-[50%] cursor-pointer">
-                    <img src="images/workflow.svg" alt="workflow"/>
-                    </div>
-                    <p class="text-[#09a098] text-sm font-semibold">Workflow</p> 
-                </li>
-    
-                <!-- data -->
-                <li class="flex flex-col items-center">
-                    <div class="hover:bg-[#cfe9e7] inline-block p-2 rounded-[50%] cursor-pointer">
-                    <img src="images/data.svg" alt="data"/>
-                    </div>
-                    <p class="text-[#09a098] text-sm font-semibold">Data</p> 
-                </li>
-    
-                <!-- approvals -->
-                <li class="flex flex-col items-center">
-                    <div class="hover:bg-[#cfe9e7] inline-block p-2 rounded-[50%] cursor-pointer">
-                    <img src="images/approvals.svg" alt="approvals"/>
-                    </div>
-                    <p class="text-[#09a098] text-sm font-semibold">Approvals</p> 
-                </li>
-            </ol>
-    
-            <!-- images -->
-            <ol class="lg:ml-10">
-                <li>
-                    <div class="relative">
-                        <img src="images/signature-base.webp" alt="signature-base" class="lg:w-[95%] border border-[#afa0a0]"/>
-                        <img src="images/mobile-image.webp" alt="mobile-image" class="lg:w-[35%] absolute lg:top-28 lg:left-2/3"/>
-                    </div>
-                </li>
-            </ol>
         </main>
     </section>
+    <!-- <section>
+        <p class="bg-teal-600 text-white font-gilroy-bold text-2xl flex justify-between items-center px-6 py-4">Human Resources<img src="/images/dropdown.svg" class="w-6" id="#"></p>
+        <div class="px-6 py-8">
+            <p class="font-lato font-bold text-teal-950 text-lg">Having consistent and complete employee data allows you to serve your workforce and provide talent management.</p>
+            <p class="font-gilroy-light text-2xl text-teal-950 my-6">Focus on relationships, not moving paperwork along.</p>
 
-    <section class="lg:mt-20">
-        <div class="container">
-            <h2 class="text-[#163836] text-center text-2xl font-bold">Increase productivity</h2>
-            <h3 class="text-[#163836] lg:text-2xl text-center pt-7">
-                Move the work forward at lightning speed and unbelievable accuracy.
-            </h3>
-        </div>
-
-        <div class="flex items-center justify-center gap-20">
-            <div class="flex flex-col gap-2">
-                <div class="relative">
-                    <img src="images/half_blue_orange.svg" alt="blue orange image" class="w-60"/>
-                    <h3 class="text-[#163836] font-black text-5xl absolute top-24 left-20">90%</h3>
-                </div>
-                <p class="text-[#163836] text-lg text-center font-semibold w-72">
-                    90% are able to act quicker on incoming data/forms.
-                </p>
+            <div class="font-lato my-6 text-lg">
+                <p class="flex items-center gap-3 pb-2"><img src="/images/get-icon.svg" class="w-6">Streaming your hiring workflow.</p>
+                <p class="flex items-center gap-3 pb-2"><img src="/images/get-icon.svg" class="w-6">Automate employee onboarding.</p>
+                <p class="flex items-center gap-3 pb-2"><img src="/images/get-icon.svg" class="w-6">Increase employee engagement.</p>
+                <p class="flex items-center gap-3 pb-2"><img src="/images/get-icon.svg" class="w-6">Simplify performance evaluations.</p>
             </div>
-
-            <div class="flex flex-col gap-2">
-                <div class="relative">
-                    <img src="images/half_blue_orange.svg" alt="blue orange image" class="w-60"/>
-                    <h3 class="text-[#163836] font-black text-5xl absolute top-24 left-28">8</h3>
-                </div>
-                <p class="text-[#163836] text-lg text-center font-semibold w-72">
-                   8 hours saved each week.
-                </p>
-            </div>
-
-            <div class="flex flex-col gap-2">
-                <div class="relative">
-                    <img src="images/half_blue_orange.svg" alt="blue orange image" class="w-64"/>
-                    <h3 class="text-[#163836] font-black text-5xl absolute top-24 left-20">80%</h3>
-                </div>
-                <p class="text-[#163836] text-lg text-center font-semibold w-72">
-                    80% have more accurate, consistent, and complete data.
-                </p>
+            
+            <div class="flex items-center gap-6 font-gilroy-bold">
+                <p class="border-[1px] border-teal-700 text-teal-700 p-3">HR Templates</p>
+                <button class="bg-orange-600 text-white py-3 px-4">Get Started</button>
             </div>
         </div>
-    </section>
+    </section> -->
+   
+    <div class=" bg-white">
+        <div class="flex flex-col items-center md:flex-row justify-center gap-7 px-10">
+            <div id="accordion-collapse" data-accordion="collapse" data-active-classes="bg-teal-600 text-white">
+        
+                <h2 id="accordion-collapse-heading-1">
+                    <button type="button" class="flex items-center border-y-[0.5px] border-gray-200 dark:border-gray-700 justify-between p-5  w-72 lg:w-96 hover:text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-100 dark:focus:bg-teal-600 dark:focus:text-white bg-teal-600 text-white" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                    <span class="text-xl font-gilroy-bold">Human Resources</span>
+                    <svg data-accordion-icon class="w-6 h-6 shrink-0 rotate-180" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-1" aria-labelledby="accordion-collapse-heading-1">
+                    <div class="p-5  dark:bg-teal-50 border-b-0">
+                        <p class="font-lato font-bold text-teal-900 text-lg md:max-w-3xl  lg:max-w-5xl">Having consistent and complete employee data allows you to serve your workforce and provide talent management.</p>
+                        <p class="font-gilroy-light text-2xl text-teal-950 my-6">Focus on relationships, not moving paperwork along.</p>
+                        <div class="font-lato my-6 text-base md:grid md:grid-cols-2">
+                            <p class="flex items-center gap-1 pb-2"><img src="/images/get-icon.svg" class="w-6">Streaming your hiring workflow.</p>
+                            <p class="flex items-center gap-1 pb-2"><img src="/images/get-icon.svg" class="w-6">Automate employee onboarding.</p>
+                            <p class="flex items-center gap-1 pb-2"><img src="/images/get-icon.svg" class="w-6">Increase employee engagement.</p>
+                            <p class="flex items-center gap-1 pb-2"><img src="/images/get-icon.svg" class="w-6">Simplify performance evaluations.</p>
+                         </div>
+                        <div class="flex items-center gap-6 font-gilroy-bold">
+                           <p class="border-[1px] border-teal-700 md:text-2xl text-teal-700 p-3 hover:bg-teal-50">HR Templates</p>
+                           <button class="bg-orange-600 md:text-2xl text-white py-3 px-4">
+                            Get Started
+                           </button>
+                        </div>	
+                    </div>
+                </div>
+        
+                <h2 id="accordion-collapse-heading-2">
+                    <button type="button" class="flex items-center border-y-[0.5px] border-gray-200 dark:border-gray-700 justify-between p-5 w-full md:w-72 lg:w-96 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-100 dark:focus:bg-teal-600 dark:focus:text-white" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+                    <span class="text-xl font-gilroy-bold">Marketing</span>
+                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                    <div class="p-5 border border-teal-200 dark:border-teal-700 dark:bg-teal-50 border-b-0">
+                        <p class="font-lato font-bold text-teal-950 text-lg">Automate your marketing efforts to provide a better customer experience, solidify your brand value, and deliver actionable leads, all to boost conversion.</p>
+                        <p class="font-gilroy-light text-2xl text-teal-950 my-6">Make data-driven decisions, with consistent, accurate data.</p>
+                        <div class="font-lato my-6 text-lg">
+                           <p class="flex items-center gap-3 pb-2"><img src="/images/get-icon.svg" class="w-6">Generate leads.</p>
+                           <p class="flex items-center gap-3 pb-2"><img src="/images/get-icon.svg" class="w-6">Manage customer data.</p>
+                           <p class="flex items-center gap-3 pb-2"><img src="/images/get-icon.svg" class="w-6">Gather customer feedback.</p>
+                           <p class="flex items-center gap-3 pb-2"><img src="/images/get-icon.svg" class="w-6">Conduct market research.</p>
+                        </div>
+                        <div class="flex items-center gap-6 font-gilroy-bold">
+                           <p class="border-[1px] border-teal-700 text-teal-700 p-3">Marketing Templates</p>
+                           <button class="bg-orange-600 text-white py-3 px-4">Get Started</button>
+                        </div>	
+                    </div>
+                </div>
+        
+                <h2 id="accordion-collapse-heading-3">
+                    <button type="button" class="flex items-center border-y-[0.5px] border-gray-200 dark:border-gray-700 justify-between p-5  w-full md:w-72 lg:w-96 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-100 dark:focus:bg-teal-600 dark:focus:text-white" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+                    <span class="text-xl font-gilroy-bold">Sales</span>
+                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                    <div class="p-5 border border-teal-200 dark:border-teal-700 dark:bg-teal-50 border-b-0">
+                        <p class="font-lato font-bold text-teal-950 text-lg">Track lead conversion from initial interest to closing the deal with Workflow automation and expedite your sales process.</p>
+                        <p class="font-gilroy-light text-2xl text-teal-950 my-6">Focus on relationships, not moving paperwork along.</p>
+                        <div class="font-lato my-6 text-lg">
+                           <p class="flex items-center gap-3 pb-2"><img src="/images/get-icon.svg" class="w-6">Enhance communication.</p>
+                           <p class="flex items-center gap-3 pb-2"><img src="/images/get-icon.svg" class="w-6">Gather signature and payments.</p>
+                           <p class="flex items-center gap-3 pb-2"><img src="/images/get-icon.svg" class="w-6">Negotiate and adjust contracts within the form.</p>
+                           <p class="flex items-center gap-3 pb-2"><img src="/images/get-icon.svg" class="w-6">Generate receipts, signed contract docs and more.</p>
+                        </div>
+                        <div class="flex items-center gap-6 font-gilroy-bold">
+                           <p class="border-[1px] border-teal-700 text-teal-700 p-3">Sales Templates</p>
+                           <button class="bg-orange-600 text-white py-3 px-4">Get Started</button>
+                        </div>	
+                    </div>
+                </div>
+        
+                <h2 id="accordion-collapse-heading-4">
+                    <button type="button" class="flex items-center border-y-[0.5px] border-gray-200 dark:border-gray-700 justify-between p-5 w-full md:w-72 lg:w-96 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-100 dark:focus:bg-teal-600 dark:focus:text-white" data-accordion-target="#accordion-collapse-body-4" aria-expanded="false" aria-controls="accordion-collapse-body-4">
+                    <span class="text-xl font-gilroy-bold">Information Technology</span>
+                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4">
+                    <div class="p-5 border border-teal-200 dark:border-teal-700 dark:bg-teal-50 border-b-0">
+                        <p class="font-lato font-bold text-teal-950 text-lg">Create a digital transformation strategy by centralizing data collection with online forms. Apply conditional logic to route requests to appropriate team members.</p>
+                        <p class="font-gilroy-light text-2xl text-teal-950 my-6">Ditch email requests and automate your IT workflow.</p>
+                        <div class="font-lato my-6 text-lg">
+                           <p class="flex items-center gap-3 pb-2"><img src="/images/get-icon.svg" class="w-6">Manage service requests.</p>
+                           <p class="flex items-center gap-3 pb-2"><img src="/images/get-icon.svg" class="w-6">Track software and hardware inventory.</p>
+                           <p class="flex items-center gap-3 pb-2"><img src="/images/get-icon.svg" class="w-6">Stay compliant to data privacy regulations.</p>
+                           <p class="flex items-center gap-3 pb-2"><img src="/images/get-icon.svg" class="w-6">Perform IT audits with checklist forms.</p>
+                        </div>
+                        <div class="flex items-center gap-6 font-gilroy-bold">
+                           <p class="border-[1px] border-teal-700 text-teal-700 p-3">IT Templates</p>
+                           <button class="bg-orange-600 text-white py-3 px-4">Get Started</button>
+                        </div>	
+                    </div>
+                </div>
+        
+                <h2 id="accordion-collapse-heading-5">
+                    <button type="button" class="flex items-center border border-gray-200 dark:border-gray-700 justify-between p-5 w-full md:w-72 lg:w-96 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-100 dark:focus:bg-teal-600 dark:focus:text-white" data-accordion-target="#accordion-collapse-body-5" aria-expanded="false" aria-controls="accordion-collapse-body-5">
+                    <span class="text-xl font-gilroy-bold">Project Management</span>
+                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-5" class="hidden" aria-labelledby="accordion-collapse-heading-5">
+                    <div class="p-5 border border-teal-200 dark:border-teal-700 dark:bg-teal-50 border-b-0">
+                        <p class="font-lato font-bold text-teal-950 text-lg">Use automated Workflow for staying on top of your projects. Collaborate with internal and external teams to collect requests, signatures, files, and approvals</p>
+                        <p class="font-gilroy-light text-2xl text-teal-950 my-6">You have enough on your plate, automate.</p>
+                        <div class="font-lato my-6 text-lg">
+                           <p class="flex items-center gap-3 pb-2"><img src="/images/get-icon.svg" class="w-6">Manage service and change requests.</p>
+                           <p class="flex items-center gap-3 pb-2"><img src="/images/get-icon.svg" class="w-6">Identify and track issues.</p>
+                           <p class="flex items-center gap-3 pb-2"><img src="/images/get-icon.svg" class="w-6">Negotiate and finalize vendor agreements.</p>
+                           <p class="flex items-center gap-3 pb-2"><img src="/images/get-icon.svg" class="w-6">Assign tasks to engage the right people at the right time.</p>
+                        </div>
+                        <div class="flex items-center gap-6 font-gilroy-bold">
+                           <p class="border-[1px] border-teal-700 text-teal-700 p-3">Templates</p>
+                           <button class="bg-orange-600 text-white py-3 px-4">Get Started</button>
+                        </div>	
+                    </div>
+                </div>
+        
+            </div>
 
-
-    <section class="mt-20">
-        <main class="container">
-            <div class="flex items-center justify-center px-20">
-                <div>
-                    <h2 class="text-[#09a098] text-5xl font-black">The ultimate tool for every team</h2>
-                    <p class="text-3xl text-[#4b4d4c] font-light w-[100%] pt-5">
-                        When off-the-shelf software doesn't suit your needs, customize Cognito Forms to be a perfect fit for your team.
+            <div id="accordion-collapse-body-1" aria-labelledby="accordion-collapse-heading-1">
+                <div class="p-5  dark:bg-teal-50 border-b-0">
+                    <p class="font-lato font-bold text-teal-900 text-lg md:max-w-3xl  lg:max-w-5xl">Having consistent and complete employee data allows you to serve your workforce and provide talent management.</p>
+                    <p class="font-gilroy-light text-2xl text-teal-950 my-6">Focus on relationships, not moving paperwork along.</p>
+                    <div class="font-lato my-6 text-base md:grid md:grid-cols-2">
+                       <p class="flex items-center gap-1 pb-2"><img src="/images/get-icon.svg" class="w-6">Streaming your hiring workflow.</p>
+                       <p class="flex items-center gap-1 pb-2"><img src="/images/get-icon.svg" class="w-6">Automate employee onboarding.</p>
+                       <p class="flex items-center gap-1 pb-2"><img src="/images/get-icon.svg" class="w-6">Increase employee engagement.</p>
+                       <p class="flex items-center gap-1 pb-2"><img src="/images/get-icon.svg" class="w-6">Simplify performance evaluations.</p>
+                    </div>
+                    <div class="flex items-center gap-6 font-gilroy-bold">
+                       <p class="border-[1px] border-teal-700 md:text-2xl text-teal-700 p-3
+                        hover:bg-teal-50 cursor-pointer">HR Templates</p>
+                       <button class="bg-orange-600 md:text-2xl text-white py-3 px-4
+                       hover:scale-95 hover:transition-all hover:duration-1000">Get Started</button>
+                    </div>	
+                </div>
+            </div>
+        </div>       
+    </div>
+    
+        
+        <section class="py-20 px-5">
+            <img src="/images/multiply.svg" alt="" class="w-28 mx-auto">
+            <p class="text-center font-gilroy-bold text-3xl  text-teal-950">Automate with Workflow</p>
+            <p class="text-center font-gilroy-light text-2xl text-teal-950 m-4">Power your business processes so you can work more efficiently.</p>
+            <p class="text-center mx-4 font-lato text-lg  text-slate-600 md:mx-auto md:max-w-2xl lg:max-w-3xl">
+                Whether there are one or one thousand entries daily, acting on that data is vital to business function. Workflow with Cognito Forms engages the right people at the right time.
+            </p>
+    
+            <section class="px-1">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-center gap-3 md:gap-8 lg:gap-24 my-7">
+                    <div class="flex items-center justify-start gap-3 md:gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none" class="w-10 md:w-7 md:mt-0"><g stroke="#798f8f" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 14.5v-.69c0-.878-.316-1.72-.879-2.34-.562-.621-1.325-.97-2.121-.97h-6c-.796 0-1.559.349-2.121.97a3.492 3.492 0 0 0-.879 2.34v.69" class="i-stroke"></path><path d="M8.5 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" class="i-stroke_2"></path></g></svg>
+                        <p class="text-2xl font-gilroy-bold text-teal-600">User Roles</p>
+                    </div>
+                    <p class="font-lato text-lg my-2 text-slate-600 md:max-w-lg">
+                        Internal and external ‘User Roles’ identify the people involved in your processes.
+                    </p>
+                </div>
+                <div class="flex flex-col md:flex-row md:items-center md:justify-center gap-3 md:gap-8 lg:gap-10 my-7">
+                    <div class="flex items-center justify-start gap-3 md:gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none" class="w-10 md:w-7 md:mt-0"><path d="M5.333 14.744a7 7 0 1 0-2.244-1.804C4.482 9.059 6.344 8.5 8.945 8.5h1.742M7.626 5.437 10.688 8.5m0 0-3.063 3.063" stroke="#798f8f" stroke-linecap="round" stroke-linejoin="round" class="i-stroke"></path></svg>
+                        <p class="text-2xl font-gilroy-bold text-teal-600">Status + Action</p>
+                    </div>
+                    <p class="font-lato text-lg my-2 text-slate-600 md:max-w-lg">
+                        Display the data that is necessary for each status. Allow specific roles to perform an action and move the status along.
+                    </p>
+                </div>
+                <div class="flex flex-col md:flex-row md:items-center md:justify-center gap-3 md:gap-8 lg:gap-12 my-7">
+                    <div class="flex items-center justify-start gap-3 md:gap-2 lg:pr-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none" class="w-10 md:w-7 md:mt-0"><path d="M13.5 13.5H2.215c-.395 0-.715-.296-.715-.662V4.5" stroke="#798f8f" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.5 3.245c0-.412.355-.745.792-.745H14.75c.437 0 .792.333.792.745v7.51c0 .411-.355.745-.792.745H4.292c-.437 0-.792-.334-.792-.745v-7.51Z" stroke="#798f8f" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.5 4.5 9.5 8l-6-3.5" stroke="#798f8f" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <p class="text-2xl font-gilroy-bold text-teal-600">Notifications</p>
+                    </div>
+                    <p class="font-lato text-lg my-2 text-slate-600 md:max-w-lg">
+                        Email notifications keep your customers and team in the loop as the status changes. Automatic customized links prompt users to take action or review data.
+                    </p>
+                </div>
+                <div class="flex flex-col md:flex-row md:items-center md:justify-center gap-3 md:gap-8 lg:gap-14 my-7">
+                    <div class="flex items-center justify-start gap-3 md:gap-2 lg:pr-20">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none" class="w-10 md:w-7 md:mt-0"><path d="M11.65 6.75 7.1 11.3 5 9.2m10.5-.7a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" stroke="#798f8f" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" class="i-stroke"></path></svg>
+                        <p class="text-2xl font-gilroy-bold text-teal-600">Tasks</p>
+                    </div>
+                    <p class="font-lato text-lg my-2 text-slate-600 md:max-w-lg">
+                        Notify your team of a required action. As the status changes, if there is an action needed, a task is automatically assigned.
                     </p>
                 </div>
     
+            </section>
+        </section>
+    
+        
+        <section class="px-5 pb-12">
+            <p class="text-3xl text-center mx-6 font-gilroy-bold">See what others are saying</p>
+            
+            <main class="flex flex-col items-center lg:flex-row lg:justify-center gap-5 lg:gap-10">
+
+                <div class="mx-5 lg:mx-0 lg:mt-10">
+                    <div class="flex items-center justify-between">
+                       <img src="/images/quotation-mark.svg" alt="" class="w-16">
+                       <div class="flex items-center">
+                           <img src="/images/star.svg" alt="" class="w-5">
+                           <img src="/images/star.svg" alt="" class="w-5">
+                           <img src="/images/star.svg" alt="" class="w-5">
+                           <img src="/images/star.svg" alt="" class="w-5">
+                           <img src="/images/star.svg" alt="" class="w-5">
+                       </div>
+                    </div>
+                    <p class="text-xl font-gilroy-bold">Cognito Forms is Awesome!</p>
+                    <details class="block lg:hidden">
+                        <p class="font-lato text-lg my-4">Cognito Forms is Awesome! It is easily one of the best-designed and user-friendly interfaces I have ever used. I have used a competitor's software for a number of years and after one brief tutorial with Cognito Forms, I was up and running. All the tools are easily and logically accessible. It really is a pleasure to use, and very intuitive. You guys deserve a big pat on the back! I am not affiliated with Cognito Forms and rarely write reviews but this app deserves to win awards because it's that good!</p>
+                    </details>
+                    <p class="hidden lg:block font-lato text-lg my-4 max-w-96">
+                        Cognito Forms is Awesome! It is easily one of the best-designed and user-friendly interfaces I have ever used. I have used a competitor's software for a number of years and after one brief tutorial with Cognito Forms, I was up and running.
+                        All the tools are easily and logically accessible.
+                    </p>
+                    <p class="text-xs">— Alan S</p>
+                </div>
+        
+                <div class="mx-5 lg:mx-0 lg:-mt-28">
+                    <div class="flex justify-between">
+                       <img src="/images/quotation-mark.svg" alt="" class="w-16">
+                       <div class="flex items-center">
+                           <img src="/images/star.svg" alt="" class="w-5">
+                           <img src="/images/star.svg" alt="" class="w-5">
+                           <img src="/images/star.svg" alt="" class="w-5">
+                           <img src="/images/star.svg" alt="" class="w-5">
+                           <img src="/images/star.svg" alt="" class="w-5">
+                       </div>
+                    </div>
+                    <p class="text-xl font-gilroy-bold">Easy to use Forms
+                    <p class="font-lato text-lg my-4">Easy to use forms, great customer support!</p>
+                    <p class="text-xs">— Rodeo Spot Marketing</p> 
+                </div>
+        
+                <div class="lg:mx-0 lg:-mt-12">
+                    <div class="flex justify-between">
+                       <img src="/images/quotation-mark.svg" alt="" class="w-16 mt-8">
+                       <div class="flex items-center">
+                           <img src="/images/star.svg" alt="" class="w-5">
+                           <img src="/images/star.svg" alt="" class="w-5">
+                           <img src="/images/star.svg" alt="" class="w-5">
+                           <img src="/images/star.svg" alt="" class="w-5">
+                           <img src="/images/star.svg" alt="" class="w-5">
+                       </div>
+                    </div>
+                    <p class="text-xl font-gilroy-bold mb-4">Cognito Forms is very simple to use
+                    <p class="font-lato text-lg my-4 lg:max-w-72">
+                        Cognito Forms is very simple to use. It's easy to create, it's easy to share and it's easy to collect results from. THANK YOU!
+                    </p>
+                    <p class="text-xs">— Kaki Kenchoshvili</p> 
+                </div>
+            </main>
+        </section>
+    
+    
+        <section class="py-16 px-5 bg-teal-50">
+            <main class="flex flex-col lg:flex-row items-center justify-evenly lg:gap-20">
+                <p class="text-3xl font-gilroy-regular text-center my-6 lg:text-start lg:max-w-72">
+                    <span class="font-gilroy-bold lg:text-5xl">Simple</span> enough for quick setup, <span class="lg:text-5xl font-gilroy-bold">customizable</span> for power users
+                </p>
+
+                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-20">
+                        <div class="grid w-24 lg:w-full">
+                            <img src="/images/repeating-sections.svg" alt="" class="w-20 mx-auto">
+                            <p class="font-gilroy-bold text-lg text-center">REPEATING SECTIONS</p>
+                        </div>
+                        <div class="grid w-24 lg:w-full">
+                            <img src="/images/data-lookups.svg" alt="" class="w-20 mx-auto">
+                            <p class="font-gilroy-bold text-lg text-center">DATA LOOKUPS</p>
+                        </div>
+
+                        <div class="grid">
+                            <img src="/images/calculations.svg" alt="" class="w-20 mx-auto">
+                            <p class="font-gilroy-bold text-lg text-center">CALCULATIONS</p>
+                        </div>
+                        <div class="grid">
+                            <img src="/images/intergrations.svg" alt="" class="w-20 mx-auto">
+                            <p class="font-gilroy-bold text-lg text-center">INTEGRATIONS</p>
+                        </div>
+                   
+                        <div class="grid w-28 lg:w-full">
+                            <img src="/images/c-logic.svg" alt="" class="w-20 mx-auto">
+                            <p class="font-gilroy-bold text-lg text-center">CONDITIONAL LOGIC</p>
+                        </div>
+                        <div class="grid w-24 lg:w-full">
+                            <img src="/images/custom-themes.svg" alt="" class="w-20 mx-auto">
+                            <p class="font-gilroy-bold text-lg text-center">CUSTOM THEMES</p>
+                        </div>
+                    </div>
+            </main>
+    
+        </section>
+    
+    
+        <section class="py-16 px-8">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-5 lg:gap-10">
+                <div class="">
+                    <img src="/images/home-data.jpg" alt="" class="rounded-full border-4 border-teal-900 my-12">
+                </div>
                 <div>
-                    <img src="images/human-resources.webp" alt="Human Resourses" class="w- rounded-[50%] border-4 border-[#555555]"/>
+                    <p class="text-3xl font-gilroy-bold w-60 md:w-full">Accurate and actionable data, every time</p>
+                    <p class="text-2xl font-gilroy-light my-4">Struggling with incomplete, outdated, or inconsistent data?</p>
+                    <p class="text-lg font-lato">
+                        Don’t wait for the budget, developers, or IT to develop a custom solution. Take charge and build a no-code solution that is as unique as your processes and harness the flow of information.
+                    </p>
+                    <button class="bg-orange-600 py-3 px-6 mt-4 mb-12 mx-auto text-2xl font-extrabold text-white">Get Started</button>
                 </div>
             </div>
-
-            <div class="sb-container">
-                <div class="divide-y-2 inline-block">
+        </section>
+    
+    
+        <section class="py-8 px-5 border-y border-teal-900 font-lato">
+            <main class="flex flex-col items-center justify-center md:flex-row">
+                <div class="flex items-center gap-4 mx-5">
+                    <img src="/images/security.svg" alt="" class="w-20 -mt-28 md:-mt-20">
                     <div class="">
-                        <div class="bg-[#09a098] inline-block">
-                            <div class="flex items-center justify-between gap-16 px-3 py-3">  
-                                <a href="" class="text-white font-bold text-xl">
-                                    Human Resources                              
-                                </a>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="transparent" width="17px" class=""><path d="m5.5 2.5 6 6-6 6" stroke="white" stroke-linecap="round" stroke-linejoin="round" class="i-stroke"/></svg>
-                            </div>
+                        <p class="text-2xl font-extrabold text-teal-600">Security</p>
+                        <div class="flex gap-2 py-1">
+                            <img src="/images/get-icon.svg" alt="" class="w-5">
+                            <p class="text-lg">Single Sign-On</p>
                         </div>
-                    </div>
-
-                    <div class="">
-                        <div class="text-black hover:bg-[#cfe9e7] w-64 inline-block">
-                            <div class="flex items-center justify-between gap-16 px-3 py-3">  
-                                <a href="" class="text-black font-bold text-xl">
-                                   Marketing                              
-                                </a>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none" width="17px" class=""><path d="m5.5 2.5 6 6-6 6" stroke="black" stroke-linecap="round" stroke-linejoin="round" class="i-stroke"/></svg> 
-                            </div>
+                        <div class="flex gap-2 py-1">
+                            <img src="/images/get-icon.svg" alt="" class="w-5 -mt-5">
+                            <p class="text-lg">Two Factor Authentication</p>
                         </div>
-                    </div>
-
-                    <div class="">
-                        <div class="text-black hover:bg-[#cfe9e7] w-64 inline-block">
-                            <div class="flex items-center justify-between gap-16 px-3 py-3">  
-                                <a href="" class="text-black font-bold text-xl">
-                                    Sales                             
-                                </a>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none" width="17px" class=""><path d="m5.5 2.5 6 6-6 6" stroke="black" stroke-linecap="round" stroke-linejoin="round" class="i-stroke"/></svg> 
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="">
-                        <div class="text-black hover:bg-[#cfe9e7] w-64 inline-block">
-                            <div class="flex items-center justify-between gap-16 px-3 py-3">  
-                                <a href="" class="text-black font-bold text-xl">
-                                    Information Technology                             
-                                </a>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none" width="17px" class=""><path d="m5.5 2.5 6 6-6 6" stroke="black" stroke-linecap="round" stroke-linejoin="round" class="i-stroke"/></svg> 
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="">
-                        <div class="text-black hover:bg-[#cfe9e7] w-64 inline-block">
-                            <div class="flex items-center justify-between gap-16 px-3 py-3">  
-                                <a href="" class="text-black font-bold text-xl">
-                                    Project Management                             
-                                </a>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none" width="17px" class=""><path d="m5.5 2.5 6 6-6 6" stroke="black" stroke-linecap="round" stroke-linejoin="round" class="i-stroke"/></svg> 
-                            </div>
+                        <div class="flex gap-2 py-1">
+                            <img src="/images/get-icon.svg" alt="" class="w-5 -mt-5">
+                            <p class="text-lg">Data Encryption & Privacy</p>
                         </div>
                     </div>
                 </div>
+                
+                <div class="flex items-center gap-4 m-5 lg:-mt-16">
+                    <img src="/images/support.svg" alt="" class="w-20 -mt-10 md:mt-0">
+                    <div class="">
+                        <p class="text-2xl font-extrabold text-teal-600">Support</p>
+                        <div class="flex gap-2 py-1">
+                            <img src="/images/get-icon.svg" alt="" class="w-5 -mt-14 md:mt-0">
+                            <p class="text-lg lg:max-w-72">Helpful and skilled support answers every ticket</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="flex gap-4 mx-5">
+                    <img src="/images/compliance.svg" alt="" class="w-20 -mt-12">
+                    <div class="">
+                        <p class="text-2xl font-extrabold text-teal-600">Compliance</p>
+                        <div class="flex gap-2 py-1">
+                            <img src="/images/get-icon.svg" alt="" class="w-5">
+                            <p class="text-lg">GDPR</p>
+                        </div>
+                        <div class="flex gap-2 py-1">
+                            <img src="/images/get-icon.svg" alt="" class="w-5">
+                            <p class="text-lg">HIPAA</p>
+                        </div>
+                        <div class="flex gap-2 py-1">
+                            <img src="/images/get-icon.svg" alt="" class="w-5">
+                            <p class="text-lg">CCPA</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </section>
+    
+    
+        <section class="py-16">
+            <div class="text-center">
+                <p class="text-4xl md:text-5xl lg:text-6xl font-gilroy-bold text-teal-600 w-60 md:w-full mx-auto">
+                    Solutions as unique as your work
+                </p>
+                <p class="text-2xl font-gilroy-light text-slate-600 m-5 md:mx-auto md:text-4xl md:max-w-3xl">
+                    Build powerful online forms and workflows for your unique team and customers.
+                </p>
             </div>
-        </main>
-    </section>
+            
+            <div class="bg-white py-8 px-5 lg:pl-10 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <div class="bg-teal-50 w-96 py-10 px-10 hover:text-white hover:bg-slate-800">
+                    <p class="text-2xl font-gilroy-bold flex items-center justify-between">NonProfits <img src="/images/non-profit.svg" alt="" class="w-12"></p>
+                    <div class="flex items-center">
+                        <p class="my-2 text-lg font-lato">
+                            Streamline operations and reduce manual tasks, allowing you to focus on impactful work  in the community.
+                        </p>
+                    </div>
+                    <a href="" class="flex md:hidden items-center gap-1 font-lato font-semibold text-teal-600 ">Explore nonprofits templates <img src="/images/arrow-thin.svg" alt="" class="w-5"></a>
+                </div>
+                <div class="bg-teal-50 w-96 py-10 px-10 hover:text-white hover:bg-slate-800">
+                    <p class="text-2xl font-gilroy-bold flex items-center justify-between">Small Business<img src="/images/small-business.svg" alt="" class="w-12"></p>
+                    <p class="my-2 text-lg font-lato">Simple yet powerful online forms for data collection, offering insight into customer behavior and employee tracking.</p>
+                    <a href="" class="flex md:hidden items-center gap-1 font-lato font-semibold text-teal-600">Explore small business templates <img src="/images/arrow-thin.svg" alt="" class="w-5"></a>
+                </div>
+                <div class="bg-teal-50 w-96 py-10 px-10 hover:text-white hover:bg-slate-800">
+                    <p class="text-2xl font-gilroy-bold flex items-center justify-between">Healthcare<img src="/images/compliance.svg" alt="" class="w-12"></p>
+                    <p class="my-2 text-lg font-lato">HIPAA-complaint healthcare form templates, eSignatures, and document generation can help you started.</p>
+                    <a href="" class="flex md:hidden items-center gap-1 font-lato font-semibold text-teal-600">Explore healthcare templates <img src="/images/arrow-thin.svg" alt="" class="w-5"></a>
+                </div>
+                <div class="bg-teal-50 w-96 py-10 px-10 hover:text-white hover:bg-slate-800">
+                    <p class="text-2xl font-gilroy-bold flex items-center justify-between">Software & Tech<img src="/images/software-tech.svg" alt="" class="w-12"></p>
+                    <p class="my-2 text-lg font-lato">Create a digital transformation strategy by centralizing data collection with online forms. Integrate Cognito Forms into your platform.</p>
+                    <a href="" class="flex md:hidden items-center gap-1 font-lato font-semibold text-teal-600">Explore software & tech templates <img src="/images/arrow-thin.svg" alt="" class="w-5"></a>
+                </div>
+                <div class="bg-teal-50 w-96 py-10 px-10 hover:text-white hover:bg-slate-800">
+                    <p class="text-2xl font-gilroy-bold flex items-center justify-between">Education<img src="/images/education.svg" alt="" class="w-12"></p>
+                    <p class="my-2 text-lg font-lato">Engage students, parents and staff with online data collection while maintaining privacy regulations.</p>
+                    <a href="" class="flex md:hidden items-center gap-1 font-lato font-semibold text-teal-600">Explore education templates <img src="/images/arrow-thin.svg" alt="" class="w-5"></a>
+                </div>
+                <div class="bg-teal-50 w-96 py-10 px-10 hover:text-white hover:bg-slate-800">
+                    <p class="text-2xl font-gilroy-bold flex items-center justify-between">Government<img src="/images/government.svg" alt="" class="w-12"></p>
+                    <p class="my-2 text-lg font-lato">Connect with the people you serve.Simplify the process of collecting information, requests, and payments.</p>
+                    <a href="" class="flex md:hidden items-center gap-1 font-lato font-semibold text-teal-600">Explore government templates <img src="/images/arrow-thin.svg" alt="" class="w-5"></a>
+                </div>
+            </div>
+    
+            <div class="grid">
+                <button class="flex items-center gap-2 text-xl font-lato font-extrabold text-teal-600 border border-teal-600 p-3 mx-auto my-12">Explore More Industries<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 49" fill="#09a098 " class="cta__arrow ml-1"><path d="M33.3015 0.564453L57.5025 24.7655L33.3015 48.9665H17.3288L35.7216 30.5737H0.226807V18.9572H35.7216L17.3288 0.564453H33.3015Z"/></svg></button>
+            </div>
+    
+            <div class="flex items-center justify-center gap-4 md:gap-20 my-14">
+                <img src="/images/leader-small-business.png" alt="" class="w-24 h-28">
+                <img src="/images/leader-spring.png" alt="" class="w-24 md:w-40 md:h-44 h-32">
+                <img src="/images/users-love-us.svg" alt="" class="w-24 h-28">
+            </div>
+    
+            <p class="text-2xl font-gilroy-light text-center">Integration with the apps you already use.</p>
+    
+            <div class="overflow-x-hidden">
+                <div class="flex gap-24 my-10 animate-marquee">
+                    <img src="/images/paypal-small.svg" alt="" class="w-12">
+                    <img src="/images/venmo-small.svg" alt="" class="w-12">
+                    <img src="/images/googlemaps.svg" alt="" class="w-12">
+                    <img src="/images/google-analytics.svg" alt="" class="w-12">
+                    <img src="/images/zapier-icon.svg" alt="" class="w-12">
+                    <img src="/images/powerautomate.svg" alt="" class="w-12">
+                    <img src="/images/make.svg" alt="" class="w-12"> 
+                    <img src="/images/stripe-small.svg" alt="" class="w-12">
+                    <img src="/images/square-small.svg" alt="" class="w-12">
+                </div>
+            </div>
+    
+            <div class="grid">
+                <button class="bg-orange-600 py-3 px-6 mt-8 mx-auto text-2xl font-bold text-white hover:scale-95 hover:transition-all
+                hover:duration-700">
+                    Sign Up For Free
+                </button>
+            </div>
+        </section>
+    
+        
+        <footer class=" bg-[#234652] font-lato text-white py-12  px-6 ">
+            <div class="lg:flex lg:items-center justify-around lg:gap-20">
+                <div class="lg:-mt-[26rem]">
+                  <p class="text-xl font-gilroy-bold my-2 text-[#92b8b8]">Company</p>
+                  <div class="border-2 border-[#798f8f] w-full my-3"></div>
+                  <li class="list-none py-1"><a href="" class="hover:underline">About</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Careers</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Newsroom</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Referral Program</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Write Us</a></li>
+                </div> 
+        
+                <div class="my-6 lg:-mt-[26.5rem]">
+                  <p class="text-xl font-gilroy-bold my-2 text-[#92b8b8]">Support</p>
+                  <div class="border-2 border-[#798f8f] w-full my-3"></div>
+                  <li class="list-none py-1"><a href="" class="hover:underline">User Guides</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Blog</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Request Help</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Status</a></li>
+                </div>
+        
+                <div class="my-6">
+                  <p class="text-xl font-gilroy-bold my-2 text-[#92b8b8]">Industries</p>
+                  <div class="border-2 border-[#798f8f] w-full my-3"></div>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Accounting $ Financial Services</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Churches & Religious Organizations</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Education</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Government</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Healthcare</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Home Maintenance & Repair</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Human Resources</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Information Technology</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Insurance</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Law Firms & Legal Services</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Manufacturing</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Marketing & Advertising</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Information Technology</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Nonprofits</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Travel & Hospitality</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Real Estate</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Restaurants & Catering</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Retail & Sales</a></li>
+                </div>
+        
+                <div class="my-6 lg:-mt-[18.5rem]">
+                  <p class="text-xl font-gilroy-bold my-2 text-[#92b8b8]">Templates</p>
+                  <div class="border-2 border-[#798f8f] w-full my-3"></div>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Application Forms</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Contact Forms</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Customer Service Forms</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Order Forms</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Registration Forms</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Groups & Events</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Reporting Forms</a></li>
+                  <li class="list-none py-1"><a href="" class="hover:underline">Survey Forms & Quizzes</a></li>
+                </div>
 
-  <script src="main.js"></script>
-</body>
-</html>
+            </div>
+    
+            <div class="flex gap-8 mt-10">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="" class="w-4"><g class="i-facebook_2"><path d="M17.25 9a8.25 8.25 0 1 0-9.54 8.15v-5.765H5.617V9h2.095V7.182c0-2.067 1.232-3.21 3.116-3.21.902 0 1.847.162 1.847.162v2.03h-1.04c-1.025 0-1.345.636-1.345 1.29V9h2.288l-.366 2.385H10.29v5.765A8.252 8.252 0 0 0 17.25 9Z" fill="#92b8b8" class="i-Vector"></path></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="" class="w-4"><path d="m10.412 7.864 5.524-6.284h-1.309L9.83 7.036 6 1.58H1.58l5.794 8.25-5.794 6.59h1.31l5.065-5.762L12 16.42h4.419l-6.008-8.556Zm-1.793 2.04-.587-.822L3.36 2.544h2.01l3.77 5.276.587.822 4.9 6.857h-2.011L8.619 9.903Z" fill="#92b8b8"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="currentColor" class="w-4"><g class="i-linkedin_2"><path d="M3.536 14.354H5.92V7.199H3.536v7.155Zm2.541-9.359a1.234 1.234 0 0 0-1.32-1.24 1.24 1.24 0 1 0-.046 2.474 1.247 1.247 0 0 0 1.366-1.234Zm6.033 9.359h2.382v-4.099c0-2.198-1.174-3.22-2.745-3.22a2.336 2.336 0 0 0-2.152 1.207V7.2H7.232v7.155h2.383v-4a1.558 1.558 0 0 1 .073-.574 1.32 1.32 0 0 1 1.22-.871c.859 0 1.202.66 1.202 1.623v3.822ZM16.934 4.05v9.9a2.976 2.976 0 0 1-2.97 2.97H4.051a2.976 2.976 0 0 1-2.957-2.97v-9.9a2.977 2.977 0 0 1 2.957-2.957h9.9a2.977 2.977 0 0 1 2.983 2.957Z" fill="#92b8b8" class="i-Vector"></path></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="currentColor" class="w-4"><g class="i-youtube_2"><path d="m7.173 11.11 4.27-2.201-4.27-2.235v4.437ZM8.77 3.507c3.33 0 5.531.161 5.531.161a2.273 2.273 0 0 1 1.59.644c.374.444.599.993.645 1.571.104.855.158 1.715.16 2.576v1.204a21.698 21.698 0 0 1-.16 2.576 2.853 2.853 0 0 1-.644 1.57 2.24 2.24 0 0 1-1.59.645s-2.203.167-5.532.167c-4.108-.032-5.37-.154-5.37-.154-.64 0-1.258-.229-1.745-.644a2.827 2.827 0 0 1-.644-1.571 20.902 20.902 0 0 1-.154-2.576v-1.21c-.002-.861.05-1.722.154-2.576.045-.578.27-1.128.644-1.571a2.26 2.26 0 0 1 1.584-.644s2.209-.155 5.531-.155v-.013Z" fill="#92b8b8" class="i-Vector"></path></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="currentColor" class="w-4"><g fill="#92b8b8" class="i-instagram_2"><path d="M8.786 2.301c2.112 0 2.363 0 3.219.045.502.008.998.102 1.468.277.343.127.654.33.908.593.263.254.466.564.592.908.176.47.27.966.277 1.468.033.83.045 1.082.045 3.22 0 2.137 0 2.362-.045 3.219a4.379 4.379 0 0 1-.277 1.468 2.634 2.634 0 0 1-1.5 1.5c-.47.176-.966.27-1.468.277-.83.032-1.082.045-3.22.045-2.137 0-2.363 0-3.219-.045A4.379 4.379 0 0 1 4.098 15a2.44 2.44 0 0 1-.908-.592 2.44 2.44 0 0 1-.592-.908 4.379 4.379 0 0 1-.277-1.468c0-.83-.045-1.082-.045-3.22 0-2.137 0-2.363.045-3.22.007-.5.1-.997.277-1.467a2.44 2.44 0 0 1 .592-.908 2.44 2.44 0 0 1 .908-.593 4.379 4.379 0 0 1 1.494-.277c.83 0 1.082-.045 3.22-.045h-.026ZM8.81.878c-2.144 0-2.414 0-3.258.045a5.673 5.673 0 0 0-1.932.374 3.863 3.863 0 0 0-1.416.908 3.863 3.863 0 0 0-.908 1.404A5.673 5.673 0 0 0 .923 5.54C.891 6.37.878 6.641.878 8.786c0 2.144 0 2.414.045 3.258.011.66.138 1.314.374 1.931.197.529.506 1.008.908 1.404.396.402.875.711 1.404.908a5.676 5.676 0 0 0 1.931.373c.844.033 1.114.046 3.258.046 2.145 0 2.415 0 3.258-.046a5.676 5.676 0 0 0 1.932-.373 3.987 3.987 0 0 0 2.312-2.312 5.674 5.674 0 0 0 .373-1.931c.033-.844.045-1.114.045-3.258 0-2.145 0-2.415-.045-3.259a5.673 5.673 0 0 0-.373-1.931 3.865 3.865 0 0 0-2.338-2.3 5.673 5.673 0 0 0-1.931-.373C11.2.891 10.93.878 8.786.878h.025Z" class="i-Vector"></path><path d="M8.786 4.723a4.063 4.063 0 1 0 4.063 4.063 4.07 4.07 0 0 0-4.063-4.063Zm0 6.696a2.634 2.634 0 1 1 0-5.268 2.634 2.634 0 0 1 0 5.268Z" class="i-Vector_2"></path><path d="M13.003 5.514a.947.947 0 1 0 0-1.893.947.947 0 0 0 0 1.893Z" class="i-Vector_3"></path></g></svg>
+            </div>
+    
+            <div class="text-xs text-right mt-8">
+                <a href="" class="m-2 hover:underline">Terms of Service</a>
+                <a href="" class="m-2 hover:underline">Privacy Policy</a>
+                <div class="my-4">
+                    <p class="mb-1">Copyright © 2024 Cognito LLC, All rights reserved.</p>
+                    <p>Part of the<strong>Cognito Apps<sup>SM</sup></strong> family of products.</p>
+                </div>
+            </div>
+        </footer>
+      
+        <script src="./script.js"></script>
+        <script src="https://unpkg.com/flowbite@1.3.3/dist/flowbite.js"></script>
+    </body>
+    </html>
